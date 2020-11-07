@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from customer.api.views import CustomerView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('customer', CustomerView.as_view({'get': 'list'})),
+    path('customer/<int:id>', CustomerView.as_view({'get': 'retrieve'}))
 ]
