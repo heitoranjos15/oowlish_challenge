@@ -1,6 +1,6 @@
 import csv
 from django.core.management.base import BaseCommand, CommandError
-from customer.api.models import Customer
+from customer.api.serializer import CustomerSerializer
 from customer.settings import BASE_DIR
 
 
@@ -12,24 +12,23 @@ class Command(BaseCommand):
                             type=str,
                             help='Inform complete csv location path')
 
-    def get_customers(self, path):
-        customer_list = list()
+    def save_customer_from_csv(self, path):
         with open(path) as csv_file:
             csv_rows = csv.DictReader(csv_file, delimiter=',')
-            for row in csv_rows:
+            for cont, row in enumerate(csv_rows):
                 row.pop('id', None)
-                customer = Customer(**row)
-                customer_list.append(customer)
-        return customer_list
+                customer = CustomerSerializer(data=row)
+                if customer.is_valid():
+                    customer.save(row)
+                else:
+                    self.stdout.write(f'Row {cont} is not valid, failed to insert')
 
     def handle(self, *args, **kwargs):
         path = f'{BASE_DIR}/{kwargs["path"]}'
         if path.endswith('.csv'):
             try:
-                customer_list = self.get_customers(path)
-                Customer.objects.bulk_create(customer_list)
-            except Exception as exception:
-                self.stdout.write(f'asdd {exception}')
+                self.save_customer_from_csv(path)
+            except Exception:
                 raise CommandError(
                     f'Check if the path: {path} is correct, or the data on csv is correct')
         else:
