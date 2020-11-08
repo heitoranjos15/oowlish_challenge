@@ -6,7 +6,7 @@ from integrations.google_geo_coding import get_geo_code_by_address_async
 
 async def get_geo_location(address, session):
     try:
-        geo_data = (await get_geo_code_by_address_async(address, session))
+        geo_data = await get_geo_code_by_address_async(address, session)
         geo_location = geo_data[0].get('geometry').get('location')
         return {
             'geo_latitude': geo_location.get('lat'),
