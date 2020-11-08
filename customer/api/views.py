@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404
 from rest_framework import viewsets
 from rest_framework.response import Response
-from customer.api.serializer import CustomerSerializer
+from customer.api.serializers import CustomerSerializer
 from customer.api.models import Customer
 
 

@@ -11,10 +11,13 @@ class CustomerSerializer(serializers.Serializer):
     company = serializers.CharField(max_length=100)
     city = serializers.CharField(max_length=100)
     title = serializers.CharField(max_length=100, allow_blank=True)
-    geo_latitude = serializers.FloatField(allow_null=True, required=False)
-    geo_longitude = serializers.FloatField(allow_null=True, required=False)
+    geo_latitude = serializers.FloatField()
+    geo_longitude = serializers.FloatField()
 
-    def save(self, validate_date):
-        customer = Customer(**validate_date)
+    def save(self, validate_data):
+        customer = Customer(**validate_data)
         customer.save()
         return customer
+
+    def save_customer_list(self, validate_list):
+        Customer.objects.bulk_create(validate_list)
