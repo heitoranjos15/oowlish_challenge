@@ -9,6 +9,7 @@ class Config():
 class Development(Config):
     def __init__(self):
         super().__init__()
+        self.api_host = 'http://127.0.0.1:8000'
         self.google_api_key = 'AIzaSyCfilbhHnqXe2LLDpnn-atLxCd5AmkjAwk'
 
 
