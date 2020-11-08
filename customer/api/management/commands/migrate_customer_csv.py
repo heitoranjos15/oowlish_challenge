@@ -1,7 +1,8 @@
 import csv
 from django.core.management.base import BaseCommand, CommandError
-from customer.api.serializer import CustomerSerializer
-from customer.settings import BASE_DIR
+
+from customer.api.serializers import CustomerSerializer
+from customer.api.builders.customer import build_customer
 
 
 class Command(BaseCommand):
@@ -15,16 +16,18 @@ class Command(BaseCommand):
     def save_customer_from_csv(self, path):
         with open(path) as csv_file:
             csv_rows = csv.DictReader(csv_file, delimiter=',')
-            for cont, row in enumerate(csv_rows):
-                row.pop('id', None)
-                customer = CustomerSerializer(data=row)
-                if customer.is_valid():
-                    customer.save(row)
+            list_customer = build_customer(csv_rows)
+
+            for cont, customer in enumerate(list_customer):
+                customer_serialized = CustomerSerializer(data=customer)
+                if customer_serialized.is_valid():
+                    customer_serialized.save(customer)
                 else:
-                    self.stdout.write(f'Row {cont} is not valid, failed to insert')
+                    self.stdout.write(
+                        f'Row {cont + 2} is not valid, please check if this row is valid')
 
     def handle(self, *args, **kwargs):
-        path = f'{BASE_DIR}/{kwargs["path"]}'
+        path = kwargs["path"]
         if path.endswith('.csv'):
             try:
                 self.save_customer_from_csv(path)
