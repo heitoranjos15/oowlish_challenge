@@ -16,11 +16,25 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
+
 from customer.api.views import CustomerView
 
+schema_view = get_schema_view(
+   openapi.Info(
+      title="Oowlish Customers",
+      default_version='v1',
+      description="List of the customers",
+      contact=openapi.Contact(email="heitoranjos96@gmail.com"),
+      license=openapi.License(name="BSD License"),
+   ),
+   public=True,
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('customers/<int:page>', CustomerView.as_view({'get': 'list'})),
     path('customer/<int:id>', CustomerView.as_view({'get': 'retrieve'})),
+    path('documentation/', schema_view.with_ui('swagger', cache_timeout=0))
 ]
