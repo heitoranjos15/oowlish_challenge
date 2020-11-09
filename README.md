@@ -3,7 +3,7 @@
 # Customer APP
     App to list all customers
 
-# Architure
+# Architecture
 ## Command migrate_customer_csv
 ![Migrate CSV](docs/command_architeture.jpg)
 
