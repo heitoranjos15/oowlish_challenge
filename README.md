@@ -96,3 +96,5 @@ $ python manage.py migrate
 $ source env/bin/activation
 $ python manage.py runserver
 ```
+
+docker build --tag oowlish .
