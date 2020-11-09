@@ -96,3 +96,16 @@ $ python manage.py migrate
 $ source env/bin/activation
 $ python manage.py runserver
 ```
+
+## Tasks
+- [x] Create a Django App
+- [x] Create a migrate_customer_csv command to import csv data
+- [x] Integration with Google GeoCoding
+- [x] Create a function asyncronous to insert on customer table
+- [x] Create Endpoints to get customer informations
+- [x] Documentation
+- [x] Test for Endpoints
+- [ ] Test for migrate_customer_csv command
+- [ ] DockerFile
+- [ ] Terraform deploy
+
