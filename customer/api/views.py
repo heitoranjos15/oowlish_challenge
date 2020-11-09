@@ -16,6 +16,8 @@ class CustomerView(viewsets.ViewSet):
         customers_list = self.serializer(data=self.queryset, many=True)
         customers_list.is_valid()
         page = paginate_customers(customers_list.data, page)
+        if not page:
+            return Response({'message': 'Page exceeds the limit'}, status=404)
         return Response(page)
 
     def retrieve(self, request, id=None):
