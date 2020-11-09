@@ -16,5 +16,6 @@ class CustomerMock:
     def generate_pages(self, pages=3):
         list_pages = list()
         for page in range(1, pages + 1):
-            list_pages.append(paginate_customers(self.list_customer_mock, page))
+            list_pages.append(
+                paginate_customers(self.list_customer_mock, page))
         return list_pages
