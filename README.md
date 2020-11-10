@@ -90,13 +90,6 @@ After that, run the migrate command to create the tables on db.
 $ python manage.py migrate
 ```
 
-## Run server
-
-```bash
-$ source env/bin/activation
-$ python manage.py runserver
-```
-
 ## Tasks
 - [x] Create a Django App
 - [x] Create a migrate_customer_csv command to import csv data
