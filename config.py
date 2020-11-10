@@ -1,3 +1,4 @@
+import logging
 import os
 
 
@@ -14,7 +15,7 @@ class Development(Config):
 
 
 def __get_enviroment():
-    env_value = os.environ.get('ENVIROMENT', 'dev')
+    env_value = os.environ.get('PYTHON_ENVIROMENT', 'dev')
     enviroments = {
         'dev': Development,
     }
@@ -22,3 +23,4 @@ def __get_enviroment():
 
 
 enviroment = __get_enviroment()
+log = logging.getLogger(__name__)

@@ -105,7 +105,9 @@ $ python manage.py runserver
 - [x] Create Endpoints to get customer informations
 - [x] Documentation
 - [x] Test for Endpoints
+- [x] Logging
+- [x] DockerFile
 - [ ] Test for migrate_customer_csv command
-- [ ] DockerFile
 - [ ] Terraform deploy
+- [ ] Production class with all prod enviroments
 
