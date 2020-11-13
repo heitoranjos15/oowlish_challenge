@@ -7,8 +7,11 @@ valid_customer = [
         "company": "Scott, King and Hamilton",
         "city": "148 Pearson Branch Suite 553\nNew Christian, IL 41267",
         "title": "Visual merchandiser",
-        "geo_latitude": -68.990908,
-        "geo_longitude": -49.889368
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Sylvia",
@@ -18,8 +21,11 @@ valid_customer = [
         "company": "Hughes Ltd",
         "city": "403 Victoria Station\nHensleyshire, IN 83254",
         "title": "Investment analyst",
-        "geo_latitude": 39.724953,
-        "geo_longitude": -52.806863
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Brandi",
@@ -29,8 +35,11 @@ valid_customer = [
         "company": "Daniel, White and Smith",
         "city": "48798 Black Plain\nCharlesmouth, NM 42444",
         "title": "Historic buildings inspector/conservation officer",
-        "geo_latitude": -76.54375,
-        "geo_longitude": -92.56191
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Pamela",
@@ -40,8 +49,11 @@ valid_customer = [
         "company": "Kennedy-Gallagher",
         "city": "48801 Caldwell Branch Apt. 488\nSimmonsberg, GA 90742",
         "title": "Osteopath",
-        "geo_latitude": -19.6866075,
-        "geo_longitude": 88.594672
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Richard",
@@ -51,8 +63,11 @@ valid_customer = [
         "company": "Hicks-Jackson",
         "city": "349 Emily Gateway\nLake Brandon, MS 49176",
         "title": "Commercial horticulturist",
-        "geo_latitude": 66.5666485,
-        "geo_longitude": -29.076898
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Rachel",
@@ -62,8 +77,11 @@ valid_customer = [
         "company": "Arnold, Jordan and Davis",
         "city": "71848 Goodwin Cove\nSouth Kevin, IL 22470",
         "title": "Administrator, charities/voluntary organisations",
-        "geo_latitude": -12.722332,
-        "geo_longitude": -58.592446
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Timothy",
@@ -73,8 +91,11 @@ valid_customer = [
         "company": "Ford, Christian and Rivera",
         "city": "2480 Williams Coves\nPhilipton, WY 22080",
         "title": "Engineer, drilling",
-        "geo_latitude": -55.2548355,
-        "geo_longitude": -145.422768
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "William",
@@ -84,8 +105,11 @@ valid_customer = [
         "company": "Cross-Martin",
         "city": "37242 Robert River Apt. 822\nGeraldview, NM 36223",
         "title": "Community development worker",
-        "geo_latitude": -36.177336,
-        "geo_longitude": -137.28125
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Mary",
@@ -95,8 +119,11 @@ valid_customer = [
         "company": "Medina Group",
         "city": "77673 Nathan Curve Suite 531\nMitchellmouth, NY 49489",
         "title": "Energy manager",
-        "geo_latitude": 74.748038,
-        "geo_longitude": -9.880405
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Sean",
@@ -106,8 +133,11 @@ valid_customer = [
         "company": "Evans Inc",
         "city": "21003 Carrie Fords Apt. 765\nLake Jack, NY 13634",
         "title": "Equities trader",
-        "geo_latitude": 89.5624325,
-        "geo_longitude": -123.200261
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Sean",
@@ -117,8 +147,11 @@ valid_customer = [
         "company": "Whitaker LLC",
         "city": "086 Scott Port\nRobertsbury, VT 43248",
         "title": "Engineer, manufacturing",
-        "geo_latitude": 24.0467995,
-        "geo_longitude": 140.567146
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Amy",
@@ -128,8 +161,11 @@ valid_customer = [
         "company": "Smith-Smith",
         "city": "65842 Brian Hollow Suite 764\nLake Oscar, CT 21995",
         "title": "Curator",
-        "geo_latitude": -20.813232,
-        "geo_longitude": -86.603539
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Gabriel",
@@ -139,8 +175,11 @@ valid_customer = [
         "company": "Chapman-Benson",
         "city": "24789 William Ridge\nMaryton, IN 09382",
         "title": "Surveyor, hydrographic",
-        "geo_latitude": -44.6404605,
-        "geo_longitude": -109.390071
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Randy",
@@ -150,8 +189,11 @@ valid_customer = [
         "company": "Fleming-Marshall",
         "city": "27288 Catherine River Suite 455\nNorth Nicoleside, AL 85091",
         "title": "Hydrologist",
-        "geo_latitude": 59.353524,
-        "geo_longitude": 96.066519
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Sara",
@@ -161,8 +203,11 @@ valid_customer = [
         "company": "Gordon and Sons",
         "city": "80476 Denise Pine Apt. 666\nAnthonymouth, HI 45756",
         "title": "Private music teacher",
-        "geo_latitude": 88.667118,
-        "geo_longitude": 100.565346
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Michele",
@@ -172,8 +217,11 @@ valid_customer = [
         "company": "Camacho, Sanchez and Daugherty",
         "city": "255 Simmons Walks Suite 460\nLake Nicholas, RI 26051",
         "title": "Herpetologist",
-        "geo_latitude": -1.77818,
-        "geo_longitude": 52.391719
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Arthur",
@@ -183,8 +231,11 @@ valid_customer = [
         "company": "Curtis Ltd",
         "city": "5683 William Path\nJohnsonmouth, MI 84745",
         "title": "Arts development officer",
-        "geo_latitude": 47.975033,
-        "geo_longitude": -87.684122
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Adam",
@@ -194,8 +245,11 @@ valid_customer = [
         "company": "Lee-Mendoza",
         "city": "USNV Cooper\nFPO AA 51776",
         "title": "Editorial assistant",
-        "geo_latitude": -86.919831,
-        "geo_longitude": 29.328107
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Dr.",
@@ -205,8 +259,11 @@ valid_customer = [
         "company": "Contreras, Frank and Ford",
         "city": "584 Wilson Loaf Suite 506\nEvanhaven, WV 19778",
         "title": "Acupuncturist",
-        "geo_latitude": -20.4765985,
-        "geo_longitude": -49.726389
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Bryce",
@@ -216,8 +273,11 @@ valid_customer = [
         "company": "Yoder, Gross and Sanchez",
         "city": "61199 Grant Meadow Suite 899\nEast Patriciaside, OK 71950",
         "title": "Ophthalmologist",
-        "geo_latitude": 18.4391205,
-        "geo_longitude": -164.292388
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Lori",
@@ -227,8 +287,11 @@ valid_customer = [
         "company": "Lee Group",
         "city": "640 Perry Canyon\nLake Amy, MN 75415",
         "title": "Television/film/video producer",
-        "geo_latitude": 65.3456315,
-        "geo_longitude": 151.952125
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Katie",
@@ -238,8 +301,11 @@ valid_customer = [
         "company": "Kennedy PLC",
         "city": "593 Haley Haven Apt. 858\nDavisshire, DC 29258",
         "title": "Retail banker",
-        "geo_latitude": -14.350093,
-        "geo_longitude": 80.575802
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Cynthia",
@@ -249,8 +315,11 @@ valid_customer = [
         "company": "Henderson Ltd",
         "city": "754 David Manor\nSouth Anne, IA 66582",
         "title": "Psychologist, counselling",
-        "geo_latitude": 60.318632,
-        "geo_longitude": 54.757693
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "James",
@@ -260,8 +329,11 @@ valid_customer = [
         "company": "Bradley, Jacobson and Ross",
         "city": "Unit 6845 Box 6414\nDPO AA 26258",
         "title": "Careers adviser",
-        "geo_latitude": -24.8390375,
-        "geo_longitude": -143.863214
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Cassandra",
@@ -271,8 +343,11 @@ valid_customer = [
         "company": "Carter Ltd",
         "city": "2487 Sandra Mount Apt. 168\nSpencermouth, WI 43834",
         "title": "Environmental health practitioner",
-        "geo_latitude": 33.0037185,
-        "geo_longitude": 62.713628
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Erin",
@@ -282,8 +357,11 @@ valid_customer = [
         "company": "Newman-Hamilton",
         "city": "219 Marcus Village\nPalmerfurt, WY 53537",
         "title": "Quarry manager",
-        "geo_latitude": -67.202213,
-        "geo_longitude": -179.571998
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Theresa",
@@ -293,8 +371,11 @@ valid_customer = [
         "company": "Durham-Logan",
         "city": "9650 Watkins Dam Suite 084\nEast Elizabethton, MI 98103",
         "title": "Health physicist",
-        "geo_latitude": 45.2719325,
-        "geo_longitude": 169.892043
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Vanessa",
@@ -304,8 +385,11 @@ valid_customer = [
         "company": "Johnson and Sons",
         "city": "919 Manuel Turnpike Suite 349\nBradleyfort, TX 20306",
         "title": "Environmental consultant",
-        "geo_latitude": 48.1352415,
-        "geo_longitude": -137.098454
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Melissa",
@@ -315,8 +399,11 @@ valid_customer = [
         "company": "Brown, Martinez and Riley",
         "city": "1185 Mackenzie Flats\nMcdanielland, NJ 47904",
         "title": "Technical brewer",
-        "geo_latitude": 71.573913,
-        "geo_longitude": -178.827898
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     },
     {
         "first_name": "Renee",
@@ -326,7 +413,10 @@ valid_customer = [
         "company": "Lowery-Schmidt",
         "city": "7868 Benjamin Inlet Suite 320\nWest Sarahton, MS 79460",
         "title": "Database administrator",
-        "geo_latitude": 21.8201595,
-        "geo_longitude": -78.281761
+        'geo_location': {
+            'geo_latitude': 39.724953,
+            'geo_longitude': -52.806863,
+            'address': 'Defaul Local'
+        }
     }
 ]

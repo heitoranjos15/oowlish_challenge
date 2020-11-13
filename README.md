@@ -5,10 +5,10 @@
 
 # Architecture
 ## Command migrate_customer_csv
-![Migrate CSV](docs/command_architeture.jpg)
+![Migrate CSV](docs/command_architecture.jpg)
 
 ## Customer APP
-![customer_app](docs/customer_app_architeture.jpg)
+![customer_app](docs/customer_app_architecture.jpg)
 
 
 # Steps to build locally

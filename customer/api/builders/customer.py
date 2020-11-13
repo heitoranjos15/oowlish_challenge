@@ -1,26 +1,14 @@
-import asyncio
 from aiohttp import ClientSession
+import asyncio
 
-from integrations.google_geo_coding import get_geo_code_by_address_async
-
-
-async def __get_geo_location(address, session):
-    try:
-        geo_data = await get_geo_code_by_address_async(address, session)
-        geo_location = geo_data[0].get('geometry').get('location')
-        return {
-            'geo_latitude': geo_location.get('lat'),
-            'geo_longitude': geo_location.get('lng')
-        }
-    except Exception:
-        pass
+from customer.api.builders.geo_location import get_geo_location 
 
 
 async def __set_geo_location(row, session):
-    geo_location = await __get_geo_location(row.get('city'), session)
+    geo_location = await get_geo_location(row.get('city'), session)
     if geo_location:
-        row.update(geo_location)
-    return row
+        row.update({'geo_location': geo_location})
+        return row
 
 
 async def __parse_csv_data(csv_data):
