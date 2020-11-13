@@ -12,6 +12,7 @@ class CustomerPageTests(APITestCase):
     def setUp(self):
         self.mock = CustomerMock()
         self.mock.save_customers_on_db()
+        self.mock.set_pages()
 
     def test_customer_pages(self):
         for page in range(len(self.mock.pages)):
